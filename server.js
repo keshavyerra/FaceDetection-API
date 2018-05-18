@@ -39,5 +39,5 @@ app.post('/signin', (req,res) => {Signin.handleSignin(req,res,db,bcrypt)})
 app.post('/register', (req,res) => {Register.handleRegister(req,res,db,bcrypt)})
 
 app.listen(process.env.PORT, ()=> {
-  console.log(`app is running on port ${PORT}`);
+  console.log(`app is running on port ${process.env.PORT}`);
 })
